@@ -1,20 +1,11 @@
 import java.util.Scanner;
 
-// OBS: o número da conta Corresponde ao contPf ou ContCnpj --> rever isso
-
-// 0 - conta-corrente
-// 1 - conta-investimento
-// 2 - conta-poupança
-
 public class Aplicacao {
     public static void main(String[] args) {
 
         Object[] contas = new Object[1];   // salvar conta
 
-        //int contaCorrente = 0;
         int contaInvestimento = 1;
-        //int contaPoupaca = 2;
-
         String nome;
         String cpfCnpj;
         int subTipoConta;
@@ -56,7 +47,6 @@ public class Aplicacao {
 
                     if (abrirConta(dadosCliente, contas)) {
                         System.out.println("Conta Criada com sucesso!");
-                        //index = subTipoConta;
                     } else {
                         System.out.println(" Você já possui uma conta!");
                     }
@@ -156,10 +146,8 @@ public class Aplicacao {
     }
 
     public static boolean saca(Object conta, double valor) {
-        // Função saca conta pessoa física
 
         String[] cliente = infoConta(conta);
-        //int tipoConta = Integer.parseInt(String.valueOf(cliente[3].charAt(0)));
         int tipoConta = Integer.parseInt(cliente[2]);
         double saldo = getSaldo(cliente);
 
@@ -183,7 +171,7 @@ public class Aplicacao {
         int tipoConta = Integer.parseInt(cliente[2]);
         if (getSaldo(cliente) > valor) {
             saca(cliente, valor);
-            //depositar(conta, valor);
+            //depositar(contaDestino, valor);
             return true;
         }
         return false;

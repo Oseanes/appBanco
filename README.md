@@ -12,3 +12,17 @@ Clientes PJ não abrem poupança, mas seus rendimentos em conta-investimento ren
 * Use a classe "Aplicacao" para criar seu método "main" e demonstrar o funcionamento do seu código.
 
 * O projeto pode ser entregue via arquivo zip diretamente na plataforma ou via link de repositório Github.
+
+
+# Informação para uso do AppBanco
+Só é possivel abrir um tipo de conta!
+### Tipo de Contas
+0 - Conta-corrente
+1 - Conta-investimento
+2 - Conta-poupança
+
+### Taxa e Rendimento 
+* Conta **Pessoa jurídico** pagam uma taxa de 5% a cada transação exeto deposito;
+* Conta **Pessoa jurídica Investimento** rende **2%** a mais do que **Conta Pessoa física Investimento**, a taxa de 
+rendimento foi fixada em **8%**.
+
